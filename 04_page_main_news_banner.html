@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>王者荣耀-新闻区</title>
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/common.css" />
+    <style>
+      .news-section {
+        display: flex;
+        height: 342px;
+        background: url(./images/news-section-bg.png) no-repeat left top;
+      }
+      /* news-section banner 轮播图 */
+      .news-section .banner {
+        width: 605px;
+      }
+      .news-section .banner .image-list {
+        width: 604px;
+        display: flex;
+        overflow: hidden;
+      }
+      .news-section .banner .image-list .item {
+        flex-shrink: 0;
+        width: 100%;
+      }
+      .news-section .banner .image-list a {
+        display: block;
+      }
+      .news-section .banner .image-list a img {
+        width: 100%;
+      }
+      .news-section .banner .title-list {
+        display: flex;
+        height: 44px;
+        line-height: 44px;
+      }
+      .news-section .banner .title-list .item {
+        flex: 1;
+        text-align: center;
+      }
+      .news-section .banner .title-list a {
+        display: block;
+        color: #b1b2be;
+      }
+      .news-section .banner .title-list a:hover,
+      .news-section .banner .title-list .item.active a {
+        color: #f3c258;
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+
+      /* news-section news */
+      .news-section .news {
+        flex: 1;
+      }
+      /* news-section download */
+      .news-section .download {
+        width: 236px;
+      }
+      .news-section .download a {
+        display: block;
+        background: url(./images/news_section_spirit.png) no-repeat;
+      }
+      .news-section .download .download-btn {
+        height: 128px;
+        background-position: 0 -219px;
+      }
+      .news-section .download .guard-btn {
+        height: 106px;
+        background-position: 0 -350px;
+      }
+      .news-section .download .experience-btn {
+        height: 108px;
+        background-position: 0 -461px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main main_wrapper">
+      <!-- main 新闻区 -->
+      <div class="news-section">
+        <div class="banner">
+          <ul class="image-list">
+            <li class="item">
+              <a href="#">
+                <img src="./images/image-list-01.jpeg" alt="" />
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <img src="./images/image-list-02.jpeg" alt="" />
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <img src="./images/image-list-03.jpeg" alt="" />
+              </a>
+            </li>
+          </ul>
+          <ul class="title-list">
+            <li class="item active">
+              <a href="">高校菁英杯开赛</a>
+            </li>
+            <li class="item">
+              <a href="">峡谷空间站</a>
+            </li>
+            <li class="item">
+              <a href="">我在王者养灵兽</a>
+            </li>
+            <li class="item">
+              <a href="">高校联赛开赛</a>
+            </li>
+            <li class="item">
+              <a href="">亚运电竞特许商品</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="news"></div>
+
+        <div class="download">
+          <a href="#" class="download-btn"></a>
+          <a href="#" class="guard-btn"></a>
+          <a href="#" class="experience-btn"></a>
+        </div>
+      </div>
+
+      <!-- 入口区 -->
+      <div class="entrance-section"></div>
+      <!-- 内容区 -->
+      <div class="content-section"></div>
+      <!-- 赛事区 -->
+      <div class="match-section"></div>
+    </div>
+  </body>
+</html>

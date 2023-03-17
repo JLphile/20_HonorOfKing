@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>王者荣耀-main-content</title>
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/common.css" />
+    <link rel="stylesheet" href="./CSS/video.css" />
+    <style>
+      .main .section-content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      .main .section-content .left-content {
+        width: 872px;
+        height: 1000px;
+      }
+      .main .section-content .right-content {
+        width: 295px;
+        height: 500px;
+      }
+      .main .match-center .match-news {
+        display: flex;
+        height: 260px;
+        margin: 20px 0 15px;
+      }
+      .main .match-center .match-news .news-left {
+        width: 211px;
+      }
+      .main .match-center .match-news .news-right {
+        flex: 1;
+        overflow: hidden;
+        padding: 0 15px;
+      }
+      .main .match-center .match-news .news-right .title {
+        display: block;
+        padding-right: 50px;
+        font-size: 24px;
+        color: #333;
+      }
+      .main .match-center .match-news .news-right .title:hover {
+        text-decoration: underline;
+      }
+      .main .match-center .match-news .news-right .subtitle {
+        display: block;
+        padding-right: 160px;
+        color: #666;
+      }
+      .main .match-center .match-news .news-right .news-list .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+      }
+      .main .match-center .match-news .news-right .news-list .item .desc {
+        flex: 1;
+        margin-left: 10px;
+        padding-right: 50px;
+        font-size: 14px;
+        
+      }
+      .main .match-center .match-news .news-right .news-list .item .desc:hover {
+        text-decoration: underline;
+      }
+      .main .match-center .match-news .news-right .news-list .item .date {
+        font-size: 12px;
+        color: #b8b9c5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main main_wrapper">
+      <div class="section-content">
+        <div class="left-content">
+          <div class="content-center">
+            <!-- section header 封装 -->
+            <div class="section_header">
+              <div class="header_left">
+                <h3 class="title">内容中心</h3>
+              </div>
+              <div class="header_right">
+                <a href="#" class="more">更多</a>
+              </div>
+              <!--  -->
+            </div>
+            <!-- 封装选项卡控件 -->
+            <div class="tab_control">
+              <div class="item active">精品栏目</div>
+              <div class="line"></div>
+              <div class="item">赛事精品</div>
+              <div class="line"></div>
+              <div class="item">英雄攻略</div>
+            </div>
+
+            <div class="tab_keyword">
+              <div class="item active">最新</div>
+              <div class="item">峡谷大气层</div>
+              <div class="item">马菠萝奇闻录</div>
+              <div class="item">狄仁杰封神榜</div>
+              <div class="item">游走基本法</div>
+              <div class="item">野王修炼手册</div>
+              <div class="item">法王的荣耀</div>
+            </div>
+            <!-- 封装video_item -->
+            <div class="video_list">
+              <a class="video_item" href="#">
+                <div class="album">
+                  <img src="./images/video-album01.png" alt="" />
+                  <div class="info">
+                    <span class="count">46.5万</span>
+                    <span class="date">2023-03-15</span>
+                  </div>
+                  <div class="cover">
+                    <i class="icon_play"></i>
+                  </div>
+                </div>
+                <div class="desc">【游走基本法】第7期：注意队友进场时机？4分钟学会各辅助该怎么打团！</div>
+              </a>
+              <a class="video_item" href="#">
+                <div class="album">
+                  <img src="./images/video-album01.png" alt="" />
+                  <div class="info">
+                    <span class="count">46.5万</span>
+                    <span class="date">2023-03-15</span>
+                  </div>
+                  <div class="cover">
+                    <i class="icon_play"></i>
+                  </div>
+                </div>
+                <div class="desc">【游走基本法】第7期：注意队友进场时机？4分钟学会各辅助该怎么打团！</div>
+              </a>
+              <a class="video_item" href="#">
+                <div class="album">
+                  <img src="./images/video-album01.png" alt="" />
+                  <div class="info">
+                    <span class="count">46.5万</span>
+                    <span class="date">2023-03-15</span>
+                  </div>
+                  <div class="cover">
+                    <i class="icon_play"></i>
+                  </div>
+                </div>
+                <div class="desc">【游走基本法】第7期：注意队友进场时机？4分钟学会各辅助该怎么打团！</div>
+              </a>
+              <a class="video_item" href="#">
+                <div class="album">
+                  <img src="./images/video-album01.png" alt="" />
+                  <div class="info">
+                    <span class="count">46.5万</span>
+                    <span class="date">2023-03-15</span>
+                  </div>
+                  <div class="cover">
+                    <i class="icon_play"></i>
+                  </div>
+                </div>
+                <div class="desc">【游走基本法】第7期：注意队友进场时机？4分钟学会各辅助该怎么打团！</div>
+              </a>
+              <a class="video_item" href="#">
+                <div class="album">
+                  <img src="./images/video-album01.png" alt="" />
+                  <div class="info">
+                    <span class="count">46.5万</span>
+                    <span class="date">2023-03-15</span>
+                  </div>
+                  <div class="cover">
+                    <i class="icon_play"></i>
+                  </div>
+                </div>
+                <div class="desc">【游走基本法】第7期：注意队友进场时机？4分钟学会各辅助该怎么打团！</div>
+              </a>
+              <a class="video_item" href="#">
+                <div class="album">
+                  <img src="./images/video-album01.png" alt="" />
+                  <div class="info">
+                    <span class="count">46.5万</span>
+                    <span class="date">2023-03-15</span>
+                  </div>
+                  <div class="cover">
+                    <i class="icon_play"></i>
+                  </div>
+                </div>
+                <div class="desc">【游走基本法】第7期：注意队友进场时机？4分钟学会各辅助该怎么打团！</div>
+              </a>
+              <a class="video_item" href="#">
+                <div class="album">
+                  <img src="./images/video-album01.png" alt="" />
+                  <div class="info">
+                    <span class="count">46.5万</span>
+                    <span class="date">2023-03-15</span>
+                  </div>
+                  <div class="cover">
+                    <i class="icon_play"></i>
+                  </div>
+                </div>
+                <div class="desc">【游走基本法】第7期：注意队友进场时机？4分钟学会各辅助该怎么打团！</div>
+              </a>
+              <a class="video_item" href="#">
+                <div class="album">
+                  <img src="./images/video-album01.png" alt="" />
+                  <div class="info">
+                    <span class="count">46.5万</span>
+                    <span class="date">2023-03-15</span>
+                  </div>
+                  <div class="cover">
+                    <i class="icon_play"></i>
+                  </div>
+                </div>
+                <div class="desc">【游走基本法】第7期：注意队友进场时机？4分钟学会各辅助该怎么打团！</div>
+              </a>
+            </div>
+          </div>
+          <!-- 赛事中心 left -->
+          <div class="match-center">
+            <!-- section_header module start -->
+            <div class="section_header">
+              <div class="header_left">
+                <h3 class="title title-icon-match">赛事中心</h3>
+              </div>
+              <div class="header_right">
+                <a href="#" class="more">更多</a>
+              </div>
+            </div>
+
+            <!-- match tab_control -->
+            <div class="tab_control">
+              <div class="item item_wrap">KPL</div>
+              <div class="line"></div>
+              <div class="item item_wrap">世界冠军杯</div>
+              <div class="line"></div>
+              <div class="item item_wrap active">挑战者杯</div>
+              <div class="line"></div>
+              <div class="item item_wrap">K甲联赛</div>
+              <div class="line"></div>
+              <div class="item item_wrap">全国大赛</div>
+              <div class="line"></div>
+              <div class="item item_wrap">高校联赛</div>
+              <div class="line"></div>
+              <div class="item item_wrap">TGA</div>
+              <div class="line"></div>
+              <div class="item item_wrap">微信游戏邀请赛</div>
+              <div class="line"></div>
+              <div class="item item_wrap">模拟战大师赛</div>
+            </div>
+
+            <!-- match-news module start -->
+            <div class="match-news">
+              <a class="news-left" href="#">
+                <img src="./images/match-01.jpg" alt="" />
+              </a>
+              <div class="news-right">
+                <a class="title nowrap_ellipsis" href="#"> 武汉eStar斩获第八冠 2022王者世冠KIC在深圳圆满收官 </a>
+                <a class="subtitle nowrap_ellipsis" href="#">
+                  武汉eStarPro4:2击败对手，夺得全新的金凤凰杯及350万美元奖金，拿到队史第八冠，刷新了王者荣耀顶级赛事的夺冠纪录，也实现了2022年内打进全部职业赛事总决赛，并三度夺冠的傲人成绩。
+                </a>
+                <ul class="news-list">
+                  <li class="item">
+                    <span class="news_type_match">挑战者杯</span>
+                    <a class="desc nowrap_ellipsis" href="#"
+                      >武汉eStarPro4:2击败对手，夺得全新的金凤凰杯及350万美元奖金，拿到队史第八冠，刷新了王者荣耀顶级赛事的夺冠纪录，也实现了2022年内打进全部职业赛事总决赛，并三度夺冠的傲人成绩。</a
+                    >
+                    <span class="date">09-22</span>
+                  </li>
+                  <li class="item">
+                    <span class="news_type_match">挑战者杯</span>
+                    <a class="desc nowrap_ellipsis" href="#"
+                      >武汉eStarPro4:2击败对手，夺得全新的金凤凰杯及350万美元奖金，拿到队史第八冠，刷新了王者荣耀顶级赛事的夺冠纪录，也实现了2022年内打进全部职业赛事总决赛，并三度夺冠的傲人成绩。</a
+                    >
+                    <span class="date">09-22</span>
+                  </li>
+                  <li class="item">
+                    <span class="news_type_match">挑战者杯</span>
+                    <a class="desc nowrap_ellipsis" href="#"
+                      >武汉eStarPro4:2击败对手，夺得全新的金凤凰杯及350万美元奖金，拿到队史第八冠，刷新了王者荣耀顶级赛事的夺冠纪录，也实现了2022年内打进全部职业赛事总决赛，并三度夺冠的傲人成绩。</a
+                    >
+                    <span class="date">09-22</span>
+                  </li>
+                  <li class="item">
+                    <span class="news_type_match">挑战者杯</span>
+                    <a class="desc nowrap_ellipsis" href="#"
+                      >武汉eStarPro4:2击败对手，夺得全新的金凤凰杯及350万美元奖金，拿到队史第八冠，刷新了王者荣耀顶级赛事的夺冠纪录，也实现了2022年内打进全部职业赛事总决赛，并三度夺冠的傲人成绩。</a
+                    >
+                    <span class="date">09-22</span>
+                  </li>
+                  <li class="item">
+                    <span class="news_type_match">挑战者杯</span>
+                    <a class="desc nowrap_ellipsis" href="#"
+                      >武汉eStarPro4:2击败对手，夺得全新的金凤凰杯及350万美元奖金，拿到队史第八冠，刷新了王者荣耀顶级赛事的夺冠纪录，也实现了2022年内打进全部职业赛事总决赛，并三度夺冠的傲人成绩。</a
+                    >
+                    <span class="date">09-22</span>
+                  </li>
+                  <li class="item">
+                    <span class="news_type_match">挑战者杯</span>
+                    <a class="desc nowrap_ellipsis" href="#"
+                      >武汉eStarPro4:2击败对手，夺得全新的金凤凰杯及350万美元奖金，拿到队史第八冠，刷新了王者荣耀顶级赛事的夺冠纪录，也实现了2022年内打进全部职业赛事总决赛，并三度夺冠的傲人成绩。</a
+                    >
+                    <span class="date">09-22</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- video-match -->
+            <div class="video_list">
+              <a class="video_item" href="#">
+                <div class="album">
+                  <img src="./images/match-video01.jpg" alt="" />
+                  <div class="info">
+                    <span class="count">46.5万</span>
+                    <span class="date">2023-03-15</span>
+                  </div>
+                  <div class="cover">
+                    <i class="icon_play"></i>
+                  </div>
+                </div>
+                <div class="desc">【游走基本法】第7期：注意队友进场时机？4分钟学会各辅助该怎么打团！</div>
+              </a>
+              <a class="video_item" href="#">
+                <div class="album">
+                  <img src="./images/match-video01.jpg" alt="" />
+                  <div class="info">
+                    <span class="count">46.5万</span>
+                    <span class="date">2023-03-15</span>
+                  </div>
+                  <div class="cover">
+                    <i class="icon_play"></i>
+                  </div>
+                </div>
+                <div class="desc">【游走基本法】第7期：注意队友进场时机？4分钟学会各辅助该怎么打团！</div>
+              </a>
+              <a class="video_item" href="#">
+                <div class="album">
+                  <img src="./images/match-video01.jpg" alt="" />
+                  <div class="info">
+                    <span class="count">46.5万</span>
+                    <span class="date">2023-03-15</span>
+                  </div>
+                  <div class="cover">
+                    <i class="icon_play"></i>
+                  </div>
+                </div>
+                <div class="desc">【游走基本法】第7期：注意队友进场时机？4分钟学会各辅助该怎么打团！</div>
+              </a>
+              <a class="video_item" href="#">
+                <div class="album">
+                  <img src="./images/match-video01.jpg" alt="" />
+                  <div class="info">
+                    <span class="count">46.5万</span>
+                    <span class="date">2023-03-15</span>
+                  </div>
+                  <div class="cover">
+                    <i class="icon_play"></i>
+                  </div>
+                </div>
+                <div class="desc">【游走基本法】第7期：注意队友进场时机？4分钟学会各辅助该怎么打团！</div>
+              </a>
+              <a class="video_item" href="#">
+                <div class="album">
+                  <img src="./images/match-video01.jpg" alt="" />
+                  <div class="info">
+                    <span class="count">46.5万</span>
+                    <span class="date">2023-03-15</span>
+                  </div>
+                  <div class="cover">
+                    <i class="icon_play"></i>
+                  </div>
+                </div>
+                <div class="desc">【游走基本法】第7期：注意队友进场时机？4分钟学会各辅助该怎么打团！</div>
+              </a>
+              <a class="video_item" href="#">
+                <div class="album">
+                  <img src="./images/match-video01.jpg" alt="" />
+                  <div class="info">
+                    <span class="count">46.5万</span>
+                    <span class="date">2023-03-15</span>
+                  </div>
+                  <div class="cover">
+                    <i class="icon_play"></i>
+                  </div>
+                </div>
+                <div class="desc">【游走基本法】第7期：注意队友进场时机？4分钟学会各辅助该怎么打团！</div>
+              </a>
+              <a class="video_item" href="#">
+                <div class="album">
+                  <img src="./images/match-video01.jpg" alt="" />
+                  <div class="info">
+                    <span class="count">46.5万</span>
+                    <span class="date">2023-03-15</span>
+                  </div>
+                  <div class="cover">
+                    <i class="icon_play"></i>
+                  </div>
+                </div>
+                <div class="desc">【游走基本法】第7期：注意队友进场时机？4分钟学会各辅助该怎么打团！</div>
+              </a>
+              <a class="video_item" href="#">
+                <div class="album">
+                  <img src="./images/match-video01.jpg" alt="" />
+                  <div class="info">
+                    <span class="count">46.5万</span>
+                    <span class="date">2023-03-15</span>
+                  </div>
+                  <div class="cover">
+                    <i class="icon_play"></i>
+                  </div>
+                </div>
+                <div class="desc">【游走基本法】第7期：注意队友进场时机？4分钟学会各辅助该怎么打团！</div>
+              </a>
+            </div>
+            <!------------- video-match-end ------------------------------------->
+          </div>
+        </div>
+        <div class="right-content"></div>
+      </div>
+    </div>
+  </body>
+</html>

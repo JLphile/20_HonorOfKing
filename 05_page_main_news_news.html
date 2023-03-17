@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>王者荣耀-新闻区</title>
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/common.css" />
+    <style>
+      .news-section {
+        display: flex;
+        height: 342px;
+        background: url(./images/news-section-bg.png) no-repeat left top;
+      }
+      /* news-section banner 轮播图 */
+      .news-section .banner {
+        width: 605px;
+      }
+      .news-section .banner .image-list {
+        width: 604px;
+        display: flex;
+        overflow: hidden;
+      }
+      .news-section .banner .image-list .item {
+        flex-shrink: 0;
+        width: 100%;
+      }
+      .news-section .banner .image-list a {
+        display: block;
+      }
+      .news-section .banner .image-list a img {
+        width: 100%;
+      }
+      .news-section .banner .title-list {
+        display: flex;
+        height: 44px;
+        line-height: 44px;
+      }
+      .news-section .banner .title-list .item {
+        flex: 1;
+        text-align: center;
+      }
+      .news-section .banner .title-list a {
+        display: block;
+        color: #b1b2be;
+      }
+      .news-section .banner .title-list a:hover,
+      .news-section .banner .title-list .item.active a {
+        color: #f3c258;
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+
+      /* news-section news */
+      .news-section .news {
+        flex: 1;
+        overflow: hidden;
+        padding: 0 17px;
+      }
+      .news-section .news .title-list {
+        display: flex;
+        height: 48px;
+        border-bottom: 1px solid #000;
+      }
+      .news-section .news .title-list .item {
+        width: 52px;
+      }
+      .news-section .news .title-list .item a {
+        display: block;
+        height: 45px;
+        line-height: 48px;
+        box-sizing: border-box;
+        text-align: center;
+        color: #b8b9c5;
+        transition: border-bottom 250ms ease-out;
+      }
+      .news-section .news .title-list .item.active a,
+      .news-section .news .title-list .item:not(.more) a:hover {
+        color: #f3c258;
+        border-bottom: 3px solid #f3c258;
+      }
+      /* 公告栏 */
+      .news-section .news .notice {
+        height: 36px;
+        line-height: 36px;
+        padding: 0 15px;
+        margin-top: 18px;
+        margin-bottom: 11px;
+        text-align: center;
+        background-color: #414046;
+      }
+      .news-section .news .notice > a {
+        display: block;
+        color: #f3c258;
+        font-size: 18px;
+        /* 抽取代码 */
+        /* white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden; */
+      }
+      /* 新闻列表 */
+      .news-section .news .news-list .item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 11px;
+      }
+      .news-section .news .news-list .item .desc {
+        flex: 1;
+        color: #b8b9c5;
+      }
+      .news-section .news .news-list .item .data {
+        color: #999;
+        font-size: 12px;
+        padding-right: 5px;
+        padding-left: 15px;
+      }
+      /* news-section download */
+      .news-section .download {
+        width: 236px;
+      }
+      .news-section .download a {
+        display: block;
+        background: url(./images/news_section_spirit.png) no-repeat;
+      }
+      .news-section .download .download-btn {
+        height: 128px;
+        background-position: 0 -219px;
+      }
+      .news-section .download .guard-btn {
+        height: 106px;
+        background-position: 0 -350px;
+      }
+      .news-section .download .experience-btn {
+        height: 108px;
+        background-position: 0 -461px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main main_wrapper">
+      <!-- main 新闻区 -->
+      <div class="news-section">
+        <!-- 轮播图 -->
+        <div class="banner">
+          <ul class="image-list">
+            <li class="item">
+              <a href="#">
+                <img src="./images/image-list-01.jpeg" alt="" />
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <img src="./images/image-list-02.jpeg" alt="" />
+              </a>
+            </li>
+          </ul>
+          <ul class="title-list">
+            <li class="item active">
+              <a href="">高校菁英杯开赛</a>
+            </li>
+            <li class="item">
+              <a href="">峡谷空间站</a>
+            </li>
+            <li class="item">
+              <a href="">我在王者养灵兽</a>
+            </li>
+            <li class="item">
+              <a href="">高校联赛开赛</a>
+            </li>
+            <li class="item">
+              <a href="">亚运电竞特许商品</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="news">
+          <ul class="title-list">
+            <li class="item active">
+              <a href="#">热门</a>
+            </li>
+            <li class="item">
+              <a href="#">新闻</a>
+            </li>
+            <li class="item">
+              <a href="#">公告</a>
+            </li>
+            <li class="item">
+              <a href="#">活动</a>
+            </li>
+            <li class="item">
+              <a href="#">赛事</a>
+            </li>
+            <li class="item more">
+              <a href="#">...</a>
+            </li>
+          </ul>
+          <!-- 公告栏 -->
+          <p class="notice">
+            <a href="#" class="nowrap_ellipsis">蒙犽皮肤设计大赛的首轮投票环节于3月10日正式启动 </a>
+          </p>
+          <!-- 新闻列表 -->
+          <ul class="news-list">
+            <li class="item">
+              <a href="#" class="desc nowrap_ellipsis news_type news_type_hot">
+                2023年王者荣耀甲级职业联赛（K甲）赛事规则
+              </a>
+              <span class="data">03/15</span>
+            </li>
+            <li class="item">
+              <a href="#" class="desc nowrap_ellipsis news_type news_type_notice"
+                >星梦大赛全民海选开启，快来Pick你心中的大乔吧！</a
+              >
+              <span class="data">03/15</span>
+            </li>
+            <li class="item">
+              <a href="#" class="desc nowrap_ellipsis news_type news_type_news"
+                >杭州亚运会倒计时200天+！首批电竞特许商品，来了！</a
+              >
+              <span class="data">03/15</span>
+            </li>
+            <li class="item">
+              <a href="#" class="desc nowrap_ellipsis news_type news_type_hot"
+                >春日主题荣耀播报方案票选结果公布-互动小任务第21期</a
+              >
+              <span class="data">03/15</span>
+            </li>
+            <li class="item">
+              <a href="#" class="desc nowrap_ellipsis news_type news_type_race">蒙犽皮肤设计大赛创意赏析第十一期</a>
+              <span class="data">03/15</span>
+            </li>
+            <li class="item">
+              <a href="#" class="desc nowrap_ellipsis news_type news_type_events"
+                >互动小任务第21期-春日荣耀播报票选活动开启！</a
+              >
+              <span class="data">03/15</span>
+            </li>
+            <li class="item">
+              <a href="#" class="desc nowrap_ellipsis news_type news_type_hot">蒙犽皮肤设计大赛创意赏析第十期</a>
+              <span class="data">03/15</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 下载游戏 -->
+        <div class="download">
+          <a href="#" class="download-btn"></a>
+          <a href="#" class="guard-btn"></a>
+          <a href="#" class="experience-btn"></a>
+        </div>
+      </div>
+
+      <!-- 入口区 -->
+      <div class="entrance-section"></div>
+      <!-- 内容区 -->
+      <div class="content-section"></div>
+      <!-- 赛事区 -->
+      <div class="match-section"></div>
+    </div>
+  </body>
+</html>

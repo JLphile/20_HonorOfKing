@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>王者荣耀-main-content</title>
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/common.css" />
+    <link rel="stylesheet" href="./CSS/video.css" />
+    <style>
+      .main .section-content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      .main .section-content .left-content {
+        width: 872px;
+        height: 1000px;
+        background-color: rgb(228, 159, 159);
+      }
+      .main .section-content .right-content {
+        width: 295px;
+        height: 500px;
+      }
+      .main .hero-skin .new-hero {
+        margin-top: 15px;
+      }
+      .main .hero-skin .new-hero .album {
+        display: block;
+      }
+      .main .hero-skin .new-hero .intro {
+        padding: 10px 15px;
+        height: 47px;
+        border: 1px solid #e5e5e5;
+        border-top: none;
+        border-radius: 0 0 2px 2px;
+      }
+      .main .hero-skin .new-hero .intro .name {
+        text-align: left;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .main .hero-skin .new-hero .intro .date {
+        text-align: left;
+        color: #999;
+        font-size: 12px;
+      }
+      .main .hero-skin .new-hero .hero-list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+      .main .hero-skin .new-hero .hero-list .item {
+      }
+      .main .hero-skin .new-hero .hero-list .item a {
+        position: relative;
+        display: block;
+      }
+      .main .hero-skin .new-hero .hero-list .item a .cover {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: #f3c258;
+        font-size: 14px;
+        writing-mode: vertical-lr;
+        letter-spacing: 0.3rem;
+        word-break: break-all;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      .main .hero-skin .new-hero .hero-list .item a:hover .cover {
+        opacity: 1;
+      }
+      .main .kpl-schedule {
+        margin-top: 28px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main main_wrapper">
+      <div class="section-content">
+        <div class="left-content"></div>
+        <div class="right-content">
+          <div class="hero-skin">
+            <!--  hero-skin header module -->
+            <div class="section_header">
+              <div class="header_left">
+                <h3 class="title title-icon-hero">英雄/皮肤</h3>
+              </div>
+              <div class="header_right">
+                <a href="#" class="more">更多</a>
+              </div>
+            </div>
+            <!-- hero-skin tab_control -->
+            <div class="tab_control">
+              <div class="item active">最新英雄</div>
+              <div class="line"></div>
+              <div class="item">最新皮肤</div>
+              <div class="line"></div>
+              <div class="item">周免英雄</div>
+            </div>
+
+            <div class="new-hero">
+              <a href="#" class="album">
+                <img src="./images/new-hero.jpg" alt="" />
+              </a>
+
+              <div class="intro">
+                <div class="name">新英雄：桑启</div>
+                <div class="date">上线时间：2023.03.17</div>
+              </div>
+
+              <!-- hero-list module -->
+              <ul class="hero-list">
+                <li class="item">
+                  <a href="#">
+                    <img src="./images/hero01.webp" alt="" />
+                    <div class="cover">赵真怀</div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img src="./images/hero01.webp" alt="" />
+                    <div class="cover">赵真怀</div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img src="./images/hero01.webp" alt="" />
+                    <div class="cover">赵真怀</div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img src="./images/hero01.webp" alt="" />
+                    <div class="cover">赵真怀</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- kpl-schedule module -->
+          <div class="kpl-schedule">
+            <div class="section_header">
+              <div class="header_left">
+                <h3 class="title title-icon-hero">KPL联赛</h3>
+              </div>
+              <div class="header_right">
+                <a href="#" class="buy">购票</a>
+                <a href="#" class="more">更多</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
