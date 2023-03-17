@@ -103,6 +103,7 @@ body {
 .section_header .header_right .more {
   display: block;
   padding-left: 20px;
+  color: #999;
   background: url(../images/news_section_spirit.png) no-repeat -252px 4px;
 }
 .section_header .header_right .more:hover {
@@ -117,6 +118,7 @@ body {
   box-sizing: border-box;
   border: 1px solid #f3c258;
   border-radius: 3px;
+  margin-right: 15px;
   text-align: center;
   text-indent: 20px;
   background: url(../images/news_section_spirit.png) no-repeat -244px -84px;
@@ -172,4 +174,24 @@ body {
   color: #fff;
   background-color: #f3c258;
   border-color: #f3c258;
+}
+
+/* icon_type */
+.icon_type{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+
+  background: url(../images/main_sprite.png) no-repeat;
+}
+
+.icon_type_hot{
+  margin-right: 2px;
+  background-position: -164px -67px;
+}
+.icon_type_fans{
+  background-position: -137px -68px;
+}
+.icon_type_guard{
+  background-position: -136px -5px;
 }
