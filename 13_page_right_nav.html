@@ -17,19 +17,13 @@
         height: 494px;
         background: url(./images/right-nav-bg.png) no-repeat top left;
       }
-      .right-nav .right-dj {
-        /* position: absolute;
-      top: 15px;
-      left: 24px;
-      width: 165px;
-      height: 145px; */
-        /* background: url(./images/right-dj.png) no-repeat top center; */
-      }
+
       .right-nav .right-list {
         position: relative;
         left: 60px;
       }
       .right-nav .right-list .item {
+        position: relative;
         width: 117px;
         height: 38px;
         background: url(./images/right-all-bg.png) no-repeat;
@@ -49,6 +43,7 @@
         margin-top: 1px;
         background-position: -243px -134px;
       }
+
       .right-nav .right-list .item.wangzheyingdi:hover {
         background-position: -243px -172px;
       }
@@ -63,18 +58,18 @@
         display: block;
         height: 100%;
       }
-      .right-nav .right-list .item.gzh{
+      .right-nav .right-list .item.gzh {
         margin-top: 1px;
         background-position: -122px -160px;
       }
-      .right-nav .right-list .item.gzh:hover{
+      .right-nav .right-list .item.gzh:hover {
         background-position: -122px -200px;
       }
-      .right-nav .right-list .item.sph{
+      .right-nav .right-list .item.sph {
         margin-top: 1px;
         background-position: -122px 0px;
       }
-      .right-nav .right-list .item.sph:hover{
+      .right-nav .right-list .item.sph:hover {
         background-position: -122px -42px;
       }
     </style>
@@ -89,12 +84,35 @@
         <li class="item code">
           <img src="./images/right-code.webp" alt="" />
         </li>
-        <li class="item wangzheyingdi"></li>
+        <li class="item wangzheyingdi">
+          <div class="code-box">
+            <img class="img-code" src="./images/wzyd-code.webp" alt="" />
+            <p>扫码<span>下载王者营地</span></p>
+            <p>每天<span>领取福利好礼</span></p>
+          </div>
+        </li>
         <li class="item weibo">
           <a href="https://weibo.com/heromoba" target="_blank"></a>
+          <div class="code-box">
+            <img class="img-code" src="./images/weibo-code.webp" alt="" />
+            <p>扫码<span>关注官方微博</span></p>
+            <p>获取<span>一手资料及福利</span></p>
+          </div>
         </li>
-        <li class="item gzh"></li>
-        <li class="item sph"></li>
+        <li class="item gzh">
+          <div class="code-box">
+            <img class="img-code" src="./images/gzh_code.webp" alt="" />
+            <p>扫码<span>关注官方公众号</span></p>
+            <p>获取<span>最新咨询及好礼</span></p>
+          </div>
+        </li>
+        <li class="item sph">
+          <div class="code-box">
+            <img class="img-code" src="./images/shipinhao_code.webp" alt="" />
+            <p>扫码<span>关注官方视频号</span></p>
+            <p>领取<span>精彩视频及福利</span></p>
+          </div>
+        </li>
       </ul>
     </div>
   </body>
