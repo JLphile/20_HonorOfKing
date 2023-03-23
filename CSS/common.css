@@ -224,3 +224,8 @@ body {
 .right-nav .right-list .item .code-box > p > span {
   color: #cd974b;
 }
+/* footer-wrap */
+.footer-wrap{
+  height: 362px;
+  background: url(../images/footer-bg.webp) no-repeat center 0;
+}

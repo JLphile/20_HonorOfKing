@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./CSS/common.css" />
     <style>
       .news-section {
+        position: relative;
         display: flex;
         height: 342px;
         background: url(./images/news-section-bg.png) no-repeat left top;
@@ -40,6 +41,24 @@
         height: 108px;
         background-position: 0 -461px;
       }
+      .news-section .age-appropriate {
+        position: absolute;
+        top: 0;
+        right: -56px;
+        width: 53px;
+        height: 68px;
+        background: url(./images/age-appropriate-bg.png) no-repeat;
+        cursor: pointer;
+      }
+      .news-section  a.anti-addiction {
+        position: absolute;
+        top: 78px;
+        right: -56px;
+        width: 53px;
+        height: 47px;
+        background: url(./images/anti-addiction-bg.png) no-repeat;
+        background-size: contain;
+      }
     </style>
   </head>
   <body>
@@ -53,6 +72,8 @@
           <a href="#" class="guard-btn"></a>
           <a href="#" class="experience-btn"></a>
         </div>
+        <div class="age-appropriate"></div>
+        <a class="anti-addiction" href="#"></a>
       </div>
 
       <!-- 入口区 -->
